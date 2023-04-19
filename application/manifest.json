@@ -1,0 +1,26 @@
+{
+    "name": "Discord Sidebar Hider",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "A simple extension that allows you to hide the sidebar in Discord.",
+    "icons": {
+        "16": "assets/icon.png",
+        "32": "assets/icon.png",
+        "48": "assets/icon.png",
+        "128": "assets/icon.png"
+    },      
+    "host_permissions": [
+      "*://discord.com/*",
+      "*://discordapp.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "*://discord.com/*",
+          "*://discordapp.com/*"
+        ],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  
